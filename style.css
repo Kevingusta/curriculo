@@ -15,7 +15,7 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: #0ef;
+    --main-color: rgb(27, 178, 189);
 }
 
 html{
@@ -23,8 +23,26 @@ html{
     overflow-x: hidden;
 }
 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.col h1{
+font-size: 50px;
+font-weight: bold;
+}
+
+.col h1 span{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--main-color);
+    }
+    
 body{
-    background: var(--bg-color);
+    background-color: black;
     color: var(--text-color);    
 }
 .header{
@@ -32,8 +50,8 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #1f2937;
     color: #f9faf8;
+    background-color: var(--bg-color);
 }
 
 .nav-home{
